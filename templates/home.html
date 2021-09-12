@@ -1,30 +1,118 @@
 {%extends 'base.html'%}
 {%block addons%}
+		<script src="{{url_for('static',filename='js/grid.js')}}"></script>
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/home.css')}}">
 		<title>Home</title>
 {%endblock%}
 {%block content%}
-		<div class="container">
-			<div class="jumbotron">
-				<h1 class="display-4">Manage your account</h1>
-			  	<p class="lead">If you don't have and account yet, create one. Otherwise, login</p>
-			  	<button class="btn btn-primary btn-warning" onclick="Login()" type="button">Login</button>
-			  	<button class="btn btn-primary btn-warning" onclick="Create_Account()" type="button">Create Account</button>
-			</div>
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm">
-			    	<div class="jumbotron">
-						<h1 class="display-4">Online calendar</h1>
-					  	<p class="lead">Download the calendar</p>
-					  	<button class="btn btn-primary btn-warning" onclick="Download_Calendar()" type="button">Download</button>
+				<div class="col-10">
+					<div class="row" id="rectangle-black">
+						<div class="col" id="rectangle-black">
+							<div class="gg">
+								<!-- This is the column where the grid has to be allocated -->
+								<div class="row" id="rectangle-black">
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+								</div>
+								<div class="row" id="rectangle-black">
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+								</div>
+								<div class="row" id="rectangle-black">
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+								</div>
+								<div class="row" id="rectangle-black">
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+								</div>
+								<div class="row" id="rectangle-black">
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+									<div class="col" id="rectangle-black">
+										cell
+									</div>
+								</div>
+							</div>
+
+							<!-- At the end, we have to put the horizontal button -->
+							<div class="row" id="rectangle-black">
+								<button type="button" class="btn btn-primary btn-block">Button</button>
+							</div>
+						</div>
+						<div class="col" id="rectangle-black">
+							<!-- This is the other column with the lateral button -->
+							<button type="button" id="rightButton" class="btn btn-primary">Button</button>
+						</div>
 					</div>
-			    </div>
-			    <div class="col-sm">
-			    	<div class="jumbotron">
-						<h1 class="display-5">Change your credentials</h1>
-					  	<p class="lead">Update your ENT credentials</p>
-					  	<button class="btn btn-primary btn-warning" onclick="Change_Credentials()" type="button">Update</button>
-					</div>
-			    </div>
-		  </div>
+				</div>
+				<div class="col">
+					right panel
+				</div>
+			</div>
 		</div>
 {%endblock%}
